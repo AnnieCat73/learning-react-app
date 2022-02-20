@@ -2,10 +2,8 @@ import React from 'react'
 
 function Lake({ name }) {
   return (
-    <div>
-      <h1>{name}</h1>
-    </div>
+    <h1>{name}</h1>
   )
 }
 
-export default Lake
+export default Lake;

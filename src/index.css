@@ -19,3 +19,7 @@ code {
 .cool-text {
   font-family: "Monaco, sans-serif";
 }
+
+.list {
+  list-style-type: none;
+}
