@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Lake({ name }) {
+function Lake(props) {
   return (
-    <h1>{name}</h1>
+    <div>
+      <h1>Visit {props.name}!</h1>
+    </div>
+    
   )
 }
 
