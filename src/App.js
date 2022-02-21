@@ -1,26 +1,25 @@
 //import logo from './logo.svg';
 import './App.css';
 import './index.css';
-import Lake from './Lake.js';
+//import Lake from './Lake.js';
 
-const lakeList = ["Echo Lake", "Maud Lake", "Cascade Lake"];
-const lakes = lakeList.map((lake, index) => (
-  <li key={index}>{lake}</li>
+
+
+
+
+const list = [1, 2, 3, 4, 5];
+const listItems = list.map((item, index) => (
+  <li key={index}>{item}</li>
 ))
 
 function App() {
   
 
   return (
-    <div className="App">
-      <Lake name="Lake Shirley"/>
-      <Lake name="Lake Ontario"/>
-      <ul className="list">
-        {lakes}
-      </ul>
-      
-      
-    </div>
+    <ul className="list">
+      {listItems}
+    </ul>
+    
   );
 }
 
