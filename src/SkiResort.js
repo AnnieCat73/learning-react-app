@@ -1,10 +1,10 @@
 import React from 'react'
 
-function SkiResort({ name }) {
+function SkiResort() {
   return (
-    <div>
-      <h1>Visit {name}!</h1>
-    </div>
+    
+      <h1>Ski Resort</h1>
+   
   );
 }
 

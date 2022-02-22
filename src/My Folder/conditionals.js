@@ -31,7 +31,7 @@ import './index.css';
 import Lake from './Lake.js';
 import SkiResort from './SkiResort.js';
 
-let season = "";//add "", winter or summer here
+let season = "";//add ""/or "autumn", "winter" or "summer" here
 
 function App() {
   {/*1) if(season === "summer") {
