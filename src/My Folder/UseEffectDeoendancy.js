@@ -1,10 +1,8 @@
-//import logo from './logo.svg';
+//useEffect with useState and Dependancy Array
 
 import React, { useEffect, useState } from "react";//1
-//import React from 'react';
 import './App.css';
 import './index.css';
-//import Checkbox from "./Checkbox.js";
 
 function App() {
   const [value, setValue] = useState("");//1)Add inital state and useState function. 2) Tie initial state to input
