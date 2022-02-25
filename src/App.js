@@ -5,12 +5,12 @@ import React, { useEffect, useState } from "react";//1
 import './App.css';
 import './index.css';
 //import GitHubUser from "./GitHubUser.js";
-import Checkbox from "./Checkbox.js";
+import CheckboxReducer from "./CheckboxReducer.js";
 
 function App() {
   
   return (
-    <Checkbox />
+    <CheckboxReducer />
   );
 }
 export default App;
