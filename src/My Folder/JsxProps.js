@@ -1,4 +1,4 @@
-//APP/JSX;
+//APP/JSX
 import './App.css';
 import './index.css';
 import Hello from './Hello'
