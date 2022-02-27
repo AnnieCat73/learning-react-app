@@ -5,6 +5,7 @@ import React from 'react';
 import './App.css';
 import './index.css';
 import Lake1 from './My Folder/Exercises/Lake1.js';
+import NumberList from './My Folder/Exercises/NumberList.js';
 
 const lakesArray = ["Lake District", "Loch Ness", "Lake Michigan"];
 const lakes = lakesArray.map((lake, index) => (
@@ -23,6 +24,18 @@ const objectsLakes = lakesObjects.map(lakeObject => (
   </div>
 ));
 
+const people = [
+  {firstName: "Sally", lastName: "Edwards"},
+  {firstName: "Henry", lastName: "Winkler"},
+  {firstName: "Trudy", lastName: "Sullivan"},
+  {firstName: "Tamar", lastName: "Kelly"}
+];
+const peopleList = people.map((person, index) => (
+  <li key={index}>{person.firstName} {person.lastName}</li>
+));
+
+
+
 function App() {
   
   return (
@@ -35,6 +48,9 @@ function App() {
       </ul>
 
       <ul>{objectsLakes}</ul>
+      <ul>{peopleList}</ul>
+
+      
 
     </div>
   );

@@ -74,6 +74,17 @@ const objectsLakes = lakesObjects.map(lakeObject => (
   </div>
 ));
 
+const people = [
+  {firstName: "Sally", lastName: "Edwards"},
+  {firstName: "Henry", lastName: "Winkler"},
+  {firstName: "Trudy", lastName: "Sullivan"},
+  {firstName: "Tamar", lastName: "Kelly"}
+];
+const peopleList = people.map((person, index) => (
+  <li key={index}>{person.firstName} {person.lastName}</li>
+));
+
+
 function App() {
   
   return (
@@ -86,7 +97,7 @@ function App() {
       </ul>
 
       <ul>{objectsLakes}</ul>
-
+      <ul>{peopleList}</ul>
     </div>
   );
 }

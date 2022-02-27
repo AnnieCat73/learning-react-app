@@ -64,3 +64,31 @@ function App() {
 }
 
 export default App;
+
+//ANOTHER EX
+import React from 'react'
+
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+const numbersItems = numbers.map((number, index) => (
+  <li key={index}>{number}</li>
+));
+function NumberList() {
+  return (
+    <ul>
+     {numbersItems}
+    </ul>
+  );
+}
+export default NumberList;
+
+//Then in App
+function App() {
+  
+  return (
+    <div>
+      <NumberList />
+
+    </div>
+  );
+}
+export default App;
