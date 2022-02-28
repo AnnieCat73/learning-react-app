@@ -72,3 +72,51 @@ function App() {
   );
 }
 export default App;
+
+//Another ex
+
+//PlayTennis.js
+import React from 'react'
+
+function PlayTennis({ sport }) {
+  return (
+    <h2>Let's play {sport}!</h2>
+  )
+}
+export default PlayTennis;
+
+//Chess.js
+import React from 'react'
+
+function Chess({ sport }) {
+  return (
+    <h2>Let's play {sport}!</h2>
+  )
+}
+export default Chess;
+
+//App.js
+import React from 'react';
+import './App.css';
+import './index.css';
+import PlayTennis from './My Folder/Exercises/PlayTennis.js';
+import Chess from './My Folder/Exercises/Chess.js';
+
+let weather = "sunny";
+
+function App() {
+  
+  return (
+    
+    <div>
+      {weather === "sunny" ? (
+        <PlayTennis sport="tennis" />
+      ) : weather === "rainy" ? (
+        <Chess sport="chess" />
+      ) : (
+        <h2>Let's windsurf!!!</h2>
+      )}
+    </div>
+  );
+}
+export default App;

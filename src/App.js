@@ -6,8 +6,11 @@ import './App.css';
 import './index.css';
 import Lake1 from './My Folder/Exercises/Lake1.js';
 import SkiResort1 from './My Folder/Exercises/SkiResort1.js';
+import PlayTennis from './My Folder/Exercises/PlayTennis.js';
+import Chess from './My Folder/Exercises/Chess.js';
 
-let season = "winter";
+
+let weather = "sunny";
 
 
 function App() {
@@ -15,13 +18,14 @@ function App() {
   return (
     
     <div>
-      {season === "summer" ? (
-        <Lake1 name="Lake Garda" />
-      ) : season === "winter" ? (
-        <SkiResort1 name="Verbier" />
+      {weather === "sunny" ? (
+        <PlayTennis sport="tennis" />
+      ) : weather === "rainy" ? (
+        <Chess sport="chess" />
       ) : (
-        <p>Come back in the winter or summer!!!</p>
+        <h2>Let's windsurf!!!</h2>
       )}
+      
       
       
       
