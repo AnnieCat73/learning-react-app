@@ -38,6 +38,24 @@ function App() {
     return <Lake name="Jenny Lake"/>
   } else if (season === "winter") {
     return <SkiResort name="Jackson Hole Mountain resort"/>
+  }//NOT WORKS IN REACT
+
+  IF ONLY ONE OR THE OTHER IT'S:
+  condition ? exprIfTrue : exprIfFalse
+
+  IF WITH ELSE IFS:
+  function example(…) {
+      return condition1 ? value1
+          : condition2 ? value2
+          : condition3 ? value3
+          : value4;
+  }
+  // Equivalent to:
+  function example(…) {
+      if (condition1) { return value1; }
+      else if (condition2) { return value2; }
+      else if (condition3) { return value3; }
+      else { return value4; }
   }*/}
 
   //2) or refactor
