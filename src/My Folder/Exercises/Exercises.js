@@ -113,15 +113,47 @@ import './index.css';
 function App() {
 
   const [status, setStatus] = useState("We are loading...");
+  const [cat, setCat] = useState("Nelson");
   
   return (
-    
+    <>
     <div>
-      <h1>{status}</h1>
-      <button onClick={() => setStatus("Close")}>Close</button>
-      <button onClick={() => setStatus("Open")}>Open</button>
-      <button onClick={() => setStatus("We are on a break!")}>On a break</button>
-    </div>
+        <h3>The cat in the house right now is: <span>{cat}</span>!</h3>
+        <button onClick={()=> setCat("Mimi")}>Get another Cat</button>
+        <button onClick={()=> setCat("no cats in the house...")}>Have no Cat</button>
+      </div>
+      <div>
+        <h1>{status}</h1>
+        <button onClick={() => setStatus("Close")}>Close</button>
+        <button onClick={() => setStatus("Open")}>Open</button>
+        <button onClick={() => setStatus("We are on a break!")}>On a break</button>
+      </div>
+    </>
+    
   );
 }
 export default App;
+
+//UseEffect ex
+//in Checkboxes.js to be eported to App.js
+import React, { useState, useEffect } from "react";
+
+function Checkboxes() {
+  const [checked, setChecked] = useState(true);
+  
+  useEffect(() => {
+    alert(`checked: ${checked.toString()}`);
+  });
+  return (
+    
+    <>
+      <input type="checkbox"
+        value={checked}
+        onChange={() => setChecked(checked => !checked)}
+      />
+      {checked ? "checked" : "not checked"}
+    </>
+  )
+}
+
+export default Checkboxes;
