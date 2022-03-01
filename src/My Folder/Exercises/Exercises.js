@@ -103,4 +103,25 @@ function App() {
 }
 export default App;
 
-//Conditionals
+//useState
+import React, { useState } from "react";
+//import React from 'react';
+import './App.css';
+import './index.css';
+
+
+function App() {
+
+  const [status, setStatus] = useState("We are loading...");
+  
+  return (
+    
+    <div>
+      <h1>{status}</h1>
+      <button onClick={() => setStatus("Close")}>Close</button>
+      <button onClick={() => setStatus("Open")}>Open</button>
+      <button onClick={() => setStatus("We are on a break!")}>On a break</button>
+    </div>
+  );
+}
+export default App;
