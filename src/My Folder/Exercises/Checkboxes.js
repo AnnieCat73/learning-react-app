@@ -3,18 +3,32 @@ import React, { useState, useEffect } from "react";
 
 function Checkboxes() {
   const [checked, setChecked] = useState(true);
-  
+
+  const [input1, setInput1] = useState("");
+  const [input2, setInput2] = useState("");
+
   useEffect(() => {
-    alert(`checked: ${checked.toString()}`);
-  });
+    console.log(`input 1: ${input1}`)
+  }, [input1, input2]);
+
+  useEffect(() => {
+    console.log(`input 2: ${input2}`)
+  }, [input2]);
+  
+  
   return (
     
     <>
-      <input type="checkbox"
-        value={checked}
-        onChange={() => setChecked(checked => !checked)}
-      />
-      {checked ? "checked" : "not checked"}
+      
+      <label>
+        Favourite Words:
+        <input value={input1} onChange={e => setInput1(e.target.value)}/>
+      </label>
+      <br />
+      <label>
+        Favourite Words:
+        <input value={input2} onChange={e => setInput2(e.target.value)}/>
+      </label>
       
       
 

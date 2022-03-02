@@ -135,7 +135,7 @@ function App() {
 export default App;
 
 //UseEffect ex
-//in Checkboxes.js to be eported to App.js
+//in Checkboxes.js to be exported to App.js
 import React, { useState, useEffect } from "react";
 
 function Checkboxes() {

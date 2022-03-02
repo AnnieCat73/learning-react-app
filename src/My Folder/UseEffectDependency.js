@@ -1,4 +1,4 @@
-//useEffect with useState and Dependancy Array
+//useEffect with useState and Dependency Array
 
 import React, { useEffect, useState } from "react";//1
 import './App.css';
