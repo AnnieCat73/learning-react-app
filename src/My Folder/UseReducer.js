@@ -21,9 +21,9 @@ function CheckboxReducer() {
 }
 export default CheckboxReducer;
 
-//Then in App.js
+/*Then in App.js
 
-import React, { useEffect, useState } from "react";//1
+import React, { useEffect, useState } from "react";
 import './App.css';
 import './index.css';
 import CheckboxReducer from "./CheckboxReducer.js";
@@ -34,4 +34,4 @@ function App() {
     <CheckboxReducer />
   );
 }
-export default App;
+export default App;*/
