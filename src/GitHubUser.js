@@ -15,7 +15,7 @@ function GitHubUser( {login} ) {
     return (
       <div>
         <h1>{data.login}</h1>
-        <img src={data.avatar_url} width={100} />
+        
       </div>//**Gets AnnieCat73
     );
   }
