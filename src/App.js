@@ -1,17 +1,18 @@
 //import logo from './logo.svg';
 
-import React, { useState } from "react";
-//import React from 'react';
+//import React, { useState } from "react";
+import React from 'react';
 import ComponentEx from './React for Rest of Us/ComponentEx';
-import Props from './React for Rest of Us/props';
+import Props from './React for Rest of Us/Props';
 import Loop from './React for Rest of Us/Loop';
-
+import State from './React for Rest of Us/State';
+import Forms from './React for Rest of Us/Forms';
 import './App.css';
 import './index.css';
 /*
 Events that can change date f.ex
-a user can click a button, scroll the page or
-type letters on keyboard i.e with that the state changes..
+a user can click a button - how do we respond to that, scroll the
+page or type letters on keyboard i.e with that the state changes..
 All we have to care about is managing
 the apps data and React automatically rerenders things
 on it's own. We don't have to manage/tell it to render
@@ -28,13 +29,13 @@ function App() {
   return (
     <>
       <ComponentEx />
-      
+      <State />
       <Props name="Meowsalot" species="cat" age="5"/>
       <Props name="Barksalot" species="dog" age="2" />
       <Props name="Fluffy" species="rabbit" age="3"/>
       <Loop />
       <small>Copyright Footer Text</small>
-      
+      <Forms />
       
     </>
     

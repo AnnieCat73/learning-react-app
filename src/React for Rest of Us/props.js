@@ -5,13 +5,13 @@ import React from 'react'
 - To give any attribute or piece of data to any
 component*/
 
-function props(props) {
+function Props(props) {
   return (
     <li>{props.name} is a {props.species} and is {props.age} years old</li>
   )
 }
 
-export default props;
+export default Props;
 
 /*or
 
