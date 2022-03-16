@@ -1,13 +1,23 @@
 //import logo from './logo.svg';
 
-//import React, { useState, useEffect } from "react";
-import React from 'react';
+import React, { useState } from "react";
+//import React from 'react';
 import ComponentEx from './React for Rest of Us/ComponentEx';
 import Props from './React for Rest of Us/props';
 import Loop from './React for Rest of Us/Loop';
 
 import './App.css';
 import './index.css';
+/*
+Events that can change date f.ex
+a user can click a button, scroll the page or
+type letters on keyboard i.e with that the state changes..
+All we have to care about is managing
+the apps data and React automatically rerenders things
+on it's own. We don't have to manage/tell it to render
+at the appropriate time. We only tell it render once as the page first loads i.e the code at the bottom */
+
+//const useState = useState();
 
 
 
@@ -18,12 +28,14 @@ function App() {
   return (
     <>
       <ComponentEx />
-      <p>The current time is {new Date().toLocaleString()}</p>
+      
       <Props name="Meowsalot" species="cat" age="5"/>
       <Props name="Barksalot" species="dog" age="2" />
       <Props name="Fluffy" species="rabbit" age="3"/>
       <Loop />
       <small>Copyright Footer Text</small>
+      
+      
     </>
     
   );
