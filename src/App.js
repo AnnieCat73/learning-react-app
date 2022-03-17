@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 
-//import React, { useState } from "react";
-import React from 'react';
+import React, { useState } from "react";
+//import React from 'react';
 import ComponentEx from './React for Rest of Us/ComponentEx';
 import Props from './React for Rest of Us/Props';
 import Loop from './React for Rest of Us/Loop';
@@ -30,7 +30,7 @@ function App() {
     <>
       <ComponentEx />
       <State />
-      <Forms />
+      {/*<Forms />*/}
       <Props name="Meowsalot" species="cat" age="5"/>
       <Props name="Barksalot" species="dog" age="2" />
       <Props name="Fluffy" species="rabbit" age="3"/>
