@@ -23,3 +23,7 @@ code {
 .list {
   list-style-type: none;
 }
+
+.small {
+  padding: 5rem;
+}

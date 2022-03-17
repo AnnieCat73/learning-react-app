@@ -30,12 +30,13 @@ function App() {
     <>
       <ComponentEx />
       <State />
+      <Forms />
       <Props name="Meowsalot" species="cat" age="5"/>
       <Props name="Barksalot" species="dog" age="2" />
       <Props name="Fluffy" species="rabbit" age="3"/>
       <Loop />
-      <small>Copyright Footer Text</small>
-      <Forms />
+      <small className="small">Copyright Footer Text</small>
+      
       
     </>
     
