@@ -6,8 +6,13 @@ import React from 'react'
 component*/
 
 function Props(props) {
+  function handleDelete() {
+    
+  }
   return (
-    <li>{props.name} is a {props.species} and is {props.age} years old</li>
+    <li>{props.name} is a {props.species} and is {props.age} years old
+      <button onClick={handleDelete}>Delete</button>
+    </li>
   )
 }
 
