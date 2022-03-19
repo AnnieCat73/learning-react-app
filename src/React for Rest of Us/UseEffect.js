@@ -67,14 +67,17 @@ function UseEffect() {
 
   useEffect(() => {
     console.log(`Hi, you clicked ${count} times`)
-  },[count, name]) //This will only run if count changes
-  //So count is a sideEffect
+  },[count, name]) //This will only run if count,name changes
+  //So count, name is a sideEffect
+  const handleCount = () => {
+    setCount(count + 1);
+    setName("");//so input goes empty for next time you type
+  }
   return (
     <div>
       <p>{name} clicked {count} times</p>
-      
-       
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <input value={name} onChange={e => setName(e.target.value)}/>
+      <button onClick={handleCount}>Click me</button>
     </div>
   )
 }
