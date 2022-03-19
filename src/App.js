@@ -7,6 +7,7 @@ import Props from './React for Rest of Us/Props';
 import Loop from './React for Rest of Us/Loop';
 import State from './React for Rest of Us/State';
 import Forms from './React for Rest of Us/Forms';
+import UseEffect from "./React for Rest of Us/UseEffect";
 import './App.css';
 import './index.css';
 /*
@@ -36,7 +37,7 @@ function App() {
       <Props name="Fluffy" species="rabbit" age="3"/>
       <Loop />
       <small className="small">Copyright Footer Text</small>
-      
+      <UseEffect />
       
     </>
     
