@@ -10,6 +10,7 @@ import Forms from './React for Rest of Us/Forms';
 import UseEffect from "./React for Rest of Us/UseEffect";
 import './App.css';
 import './index.css';
+import Conditional from "./React for Rest of Us/Conditional";
 /*
 Events that can change date f.ex
 a user can click a button - how do we respond to that, scroll the
@@ -38,6 +39,7 @@ function App() {
       <Loop />
       <small className="small">Copyright Footer Text</small>
       <UseEffect />
+      <Conditional />
       
     </>
     
