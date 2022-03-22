@@ -35,7 +35,7 @@ function App() {
     <>
       <ComponentEx />
       <State />
-      {/*<Forms />*/}
+      <Forms />
       <Props name="Meowsalot" species="cat" age="5"/>
       <Props name="Barksalot" species="dog" age="2" />
       <Props name="Fluffy" species="rabbit" age="3"/>
