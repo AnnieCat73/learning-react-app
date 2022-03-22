@@ -30,7 +30,7 @@ useEffect(() => {
  console.log(`Hi ${name} you clicked ${count} times
 }, [name, count])//only rerender if name and count changes
 
-You migth find yourself using this option a lot.
+You migtht find yourself using this option a lot.
 useEffect() is great for adding logs, accessing 3rd
 party APIs and much more
 
@@ -56,7 +56,7 @@ useEffect(() => {
 
 /************
  * <input type="text" value={name}
-       onChange={() => setName(e.target.value)} />
+       onChange={(e) => setName(e.target.value)} />
  */
 
 
